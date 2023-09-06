@@ -2,26 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Orbitron:wght@400;500&family=Outfit:wght@400;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  font-family: 'Outfit', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  .herobtn {
+    @apply px-4 py-2 border border-[#242424] rounded-full uppercase text-[10px] tracking-widest text-gray-500 transition-all hover:border-cyan-400 hover:text-cyan-400
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .contactInput {
+    @apply outline-none bg-slate-100/10 rounded-sm border-b px-4 py-2 border-[#242424] text-gray-500 transition-all placeholder-gray-500 focus:border-cyan-400 focus:text-cyan-400 hover:border-cyan-400
+  }
 }
