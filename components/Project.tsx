@@ -21,6 +21,24 @@ function Project({}: Props) {
     <h3 className='absolute top-24 uppercase tracking-[15px] text-gray-500 text-2xl'>Projects</h3>
     <div className='flex w-full space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory mt-10 scrollbar-track-gray-400/20 scrollbar-thumb-cyan-400 scrollbar-thin'>
       <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 h-[350px] w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 opacity-40 hover:opacity-100 cursor-pointer transtion-opacity duration-200 overflow-hidden'>
+        <Link href='https://amazon-o2yl.vercel.app/'>
+          <motion.img
+            initial={{y: -100,opacity:0}}
+            transition={{duration:1.2}}
+            whileInView={{opacity:1,y:0}}
+            viewport={{once:true}}
+              src="amazon.PNG"
+              className='w-32 h-32 object-contain object-center'
+          />
+        </Link> 
+          <div className='px-0 md:px-10'>
+              <h4 className='text-4xl font-light'>Amazon</h4>
+              <ul className='space-y-4 ml-5 text-lg'>
+                  <li>Fron-end Amazon</li>
+              </ul>
+          </div>
+      </article>
+      <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 h-[350px] w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 opacity-40 hover:opacity-100 cursor-pointer transtion-opacity duration-200 overflow-hidden'>
         <Link href='https://shopping-mu-jet.vercel.app/'>
           <motion.img
             initial={{y: -100,opacity:0}}
